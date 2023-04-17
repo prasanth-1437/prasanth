@@ -284,14 +284,14 @@ function gett(j,k)
 
   c=`<div class="container col">
         <div class="row">
-          <div class="sec-sub1 col-md-8">`
+          <div class="sec-sub1 col-lg-8">`
           for(let i=0;i<m.Type1.length;i++)
           {
             c+=`<div class="photo-nd-desc row">
-                  <div class="image col-md-4">
+                  <div class="image col-lg-4">
                    <img src="${m.Type1[i].link}" class="sec-image">
                    </div>
-                   <div class="desc col-md-8">
+                   <div class="desc col-lg-8">
                       <h1>${m.Type1[i].name}</h1>
                       <h3>Amount Rs.50 /Kg</h3>
                       <form>
@@ -303,7 +303,7 @@ function gett(j,k)
                 </div>`
             }
     c+=`   </div>
-         <div class="sec-sub2 col-md-4">
+         <div class="sec-sub2 col-lg-4">
            <h1>Benifits</h1>
           </div>
         </div></div>`
@@ -330,14 +330,14 @@ function addToCart_Display(){
   }, 0);
       c=`<div class="cart-container col">
         <div class="row">
-          <div class="cart-sec-sub1 col-md-8">`
+          <div class="cart-sec-sub1 col-lg-8">`
           for(let i=0;i<addTo.length;i++)
           {
             c+=`<div class="cart-photo-nd-desc row">
-                  <div class="image col-md-4">
+                  <div class="image col-lg-4">
                    <img src="${addTo[i].link}" class="sec-image">
                    </div>
-                   <div class="cart-desc col-md-8">
+                   <div class="cart-desc col-lg-8">
                      <span class="title-cart"> <h3>${addTo[i].name}</h3><button class="remove-btn" name="${i}" onclick="cartremove()">X</button></span>
                       <h3>Amount Rs.50 /Kg</h3>
                       <form >
@@ -349,7 +349,7 @@ function addToCart_Display(){
             }
 
     c+=`   </div>
-         <div class="cart-sec-sub2 col-md-4">
+         <div class="cart-sec-sub2 col-lg-4">
            <h1>Total Price</h1><table id="calc-price-table">
            <tr><th>Name</th><th>Quantity</th><th>1 kg</th><th>price</th></tr>`
            let sum=0;
